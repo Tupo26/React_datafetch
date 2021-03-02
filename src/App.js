@@ -37,8 +37,7 @@ class News extends React.Component{
 			<ul>
 			{posts.map(post => (
 				<li key={post.objectID}>
-					{post.title},
-					{post.url}
+					<a href={post.url}>{post.title}</a>
 				</li>
 			))}
 			</ul> ); 
